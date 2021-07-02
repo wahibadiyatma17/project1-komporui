@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "databases",
+  "info": {
+    "name": "Database",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "asal_sekolah": {
+      "type": "string"
+    },
+    "jalur_masuk": {
+      "type": "enumeration",
+      "enum": [
+        "SNMPTN",
+        "SBMPTN",
+        "SIMAK"
+      ]
+    },
+    "fakultas": {
+      "type": "enumeration",
+      "enum": [
+        "Kedokteran",
+        "KedokteranGigi",
+        "KesehatanMasyarakat",
+        "IlmuKeperawatan",
+        "Farmasi",
+        "MatematikaIlmuPengetahuanAlam",
+        "Teknik",
+        "IlmuKomputer",
+        "Hukum",
+        "EkonomiBisnis",
+        "IlmuPengetahuanBudaya",
+        "Psikologi",
+        "IlmuSosialdanIlmuPolitik",
+        "IlmuAdministrasi"
+      ]
+    },
+    "jurusan": {
+      "type": "string"
+    },
+    "no_wa": {
+      "type": "string"
+    },
+    "id_line": {
+      "type": "string"
+    },
+    "no_ortu": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "text"
+    },
+    "tahun_diterima": {
+      "type": "datetime"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nama"
+    }
+  }
+}
