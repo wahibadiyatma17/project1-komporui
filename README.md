@@ -1,3 +1,3 @@
-# Strapi application
+# Kompor UI Website Backend
 
-A quick description of your strapi application
+Developed using Strapi Application
